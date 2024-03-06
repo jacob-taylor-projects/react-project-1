@@ -12,11 +12,15 @@ import LoadMoreData from './components/load-more-data';
 import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
 import ScrollIndicator from './components/scroll-indicator';
+import ScrollToTopAndBottom from './components/scroll-to-top-and-bottom';
 import SearchAutocomplete from './components/search-autocomplete-with-api';
 import StarRating from './components/star-rating';
 import TicTacToe from './components/tic-tac-toe';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
+import UseFetchHookTest from './components/use-fetch/test';
+import UseOnClickOutsideTest from './components/use-outside-click/test';
+import UseWindowResizeTest from './components/use-window-resize/test';
 
 function App() {
   return (
@@ -57,6 +61,14 @@ function App() {
     <FeatureFlagGlobalState>
       <FeatureFlags/>
     </FeatureFlagGlobalState>
+    {/*useFetch - Custom hook */}
+    <UseFetchHookTest/>
+    {/*Use onClick Outside Hook Test */}
+    <UseOnClickOutsideTest/>
+    {/*Use Window Resize Hook Test */}
+    <UseWindowResizeTest/>
+    {/*Scroll to Top and Bottom */}
+    <ScrollToTopAndBottom/>
     </div>
   );
 }
